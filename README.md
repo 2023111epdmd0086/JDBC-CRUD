@@ -4,6 +4,9 @@ Projeto desenvolvido para treinamento para prova prática do SERPRO.
 
 O programa consiste de métodos cadastrarVendedor, findAll e deleteById.
 
+
+```
+
 private static void cadastrarVendedor(Scanner sc, SimpleDateFormat sdf, SimpleDateFormat sdf2, Statement st)
             throws ParseException, SQLException {
         System.out.println("================= CADASTRAR NOVO VENDEDOR NO BD =================");
@@ -20,6 +23,8 @@ private static void cadastrarVendedor(Scanner sc, SimpleDateFormat sdf, SimpleDa
         System.out.print("Digite o departamento do vendedor: ");
         int departmentId = sc.nextInt();
         sc.nextLine();
+```
+```
 
         st.executeUpdate(
                 "INSERT INTO seller "
@@ -35,6 +40,8 @@ private static void cadastrarVendedor(Scanner sc, SimpleDateFormat sdf, SimpleDa
 
         System.out.println("Adicionado com sucesso o vendedor " + name);
     }
+```
+```
 
     private static void findAll(Statement st) throws SQLException {
         ResultSet rs;
@@ -54,3 +61,4 @@ private static void cadastrarVendedor(Scanner sc, SimpleDateFormat sdf, SimpleDa
 
         System.out.println("Adicionado com sucesso o vendedor de ID " + id);
     }
+```
